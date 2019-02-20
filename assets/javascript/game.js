@@ -52,7 +52,7 @@ readyGo();
 
 //creating the .onClick event for the crystals, hopefully with the addition property.
 
-$(document).on("click", ".crystal", function () {
+$(document).on("click touchstart", ".crystal", function () {
     var num = parseInt($(this).attr('data-random'));
 
     lastClicked += num;
